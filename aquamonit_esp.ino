@@ -10,7 +10,7 @@ const char* WIFI_PASSWORD = "66864558";
 // ==== CONFIGURACIÓN AWS IoT ====
 const char* AWS_ENDPOINT = "a340n6n8bwxje6-ats.iot.us-east-1.amazonaws.com"; //endpoint MQTT
 const int AWS_PORT = 8883;
-const char* MQTT_TOPIC = "ShowerTopic/Shower01";
+const char* MQTT_TOPIC = "ShowerTopic/shower01";
 
 // ==== CERTIFICADOS ====
 // Certificado raíz de Amazon
