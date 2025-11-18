@@ -4,8 +4,8 @@
 #include <time.h>
 
 // ==== CONFIGURACIÓN WiFi ====
-const char* WIFI_SSID = "DARIEN";
-const char* WIFI_PASSWORD = "66864558";
+const char* WIFI_SSID = "SMOVILES";
+const char* WIFI_PASSWORD = "roaming-2022";
 
 // ==== CONFIGURACIÓN AWS IoT ====
 const char* AWS_ENDPOINT = "a340n6n8bwxje6-ats.iot.us-east-1.amazonaws.com"; //endpoint MQTT
@@ -40,60 +40,69 @@ rqXRfboQnoZsG4q5WTP468SQvvG5
 // Certificado del Thing
 static const char AWS_CLIENT_CERT[] PROGMEM = R"KEY(
 -----BEGIN CERTIFICATE-----
-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
+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
-SW5jLiBMPVNlYXR0bGUgU1Q9V2FzaGluZ3RvbiBDPVVTMB4XDTI1MTExMjE2MDcx
+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
-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
+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
 -----END CERTIFICATE-----
 )KEY";
 
 // Llave privada del Thing
 static const char AWS_PRIVATE_KEY[] PROGMEM = R"KEY(
 -----BEGIN RSA PRIVATE KEY-----
-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
+MIIEpAIBAAKCAQEA0HHzmmoHByK2xIm5qerqwyREBEAwz15aKUi00rXV/VAEVXMt
+IZgU9sTgcsSkD7wrphCEVsyilQS84/1i2j86cka18jBzbJSwYa2oOa3BZKKrXyDA
+zIbDZgtFnZUAejQ2yG/j/oHH1jO3YHFMpPOyPJdJner6pAykiW8vRCTVdV4L8DUP
+DPPbthWwcj6Qw9ENr4cOir/auVBjZ3X2Ht16nq4J1I/oVzgP4PdJ1vg5EDInhS/m
+dapnJIIEwx0xp6+M2DY5qduDqBoWkLBEOsWbW6US0QRPM9YKVRcWFX99x2mPO4S+
+jEU8HmMnojfurHjsbnuAPWcuFB8yEvMUVrsljQIDAQABAoIBAHElSawJ3aK77yWj
+9MoNID2o09rS1Sva9Wnvc2flGDEWXCPeDyNrIAYLPCJQJxX7eF3+HTfYgHAPUFEZ
+W61IIPui8mRydFT+KPf8gZI9hPqRaiCK8NyUUkBz4ef113p+GTaXtdSSsdzN2b5a
+AdaQCbHmFSnJQSAHVNDdL3T34X6BAUZVd4dk1bki0SHCk7GHb5icKWtjNadUjS5k
+VPrKc+USeJ2lfRqTqL7Bmaez+P3k0/SmoUcG9+SxQXdj9Pa5iXQaqAEh7Zv3eQDf
+DAYIAvWllnqCqpCTyhSTrjZTWI5Azs1zswZxBBuj48n2u6aGTyy+jXz+J8kFlgdd
+J4vNGOkCgYEA8XkSNPjiKVuSul1BX/1npjulyVA3Gk/1XYc+ZY3+nxEjW6zOvSaT
+OUr+9sYeyVnIVIHhAE8Ie8ph7BQiIGzOtsT+sY407D59sQHYjWQ1HJVoQFeD/y92
+jyTQeRb5ue1Yc4Oo4IToFlk6GsdnxevIELSujE4rzaU/OyZWz1u/Qn8CgYEA3Pw3
+88qqImZPPzh/XEwcOSbLmFWaHavY+5QR1P6LtP+sAFJIo+ZUaumLg5LcG79aOU3t
+5NRKgcGoMOp4Hxl4NzLOyDMRYPOzEoZk05ne8RjCq/z/YGMHtfcNhtvEiffKv/4i
+TQmQzGNG2MxJjHDTtG00mzGDGn3GkY0Bt0O/efMCgYEA1uwWy3U1/u+VgjCcjm5C
+Qc/XOH4f/VhroGpOnB8tILElUmRVwj9CTH02v7gJENfLmYPcGuU9PMkeLPyif0+5
+ES33L1vOOPNJ9jEZaIdnSmCk4JfEUW4STUfMEerkLJtW3cGynttMow+ZytnuwFei
+w1O+A/1TuX6579Co9XjIm8sCgYEAslBKjcuQsSVA+NCL5Fv9whgN3KPmMd8CvS3j
+nayv6qMLlU7QEoC+yW4eB1MvjKxBD1BUj3rFjCJJpv7rYpzYpiG3PVAHy+WZL2+G
+WEAm5wCFxOXm403FYQ0yuwkGdBWgYn+cCfGYB3RsLG/bQRmhmkssUbYIBg5LdhMD
+uW9PSAUCgYA+lUGrtUkqMNNCMK8aVUWwJ9OSZjYch5wJo+Lh6eQLIvNk8D8Gz/yY
+mjqn66icLKH2G0ES7PW3Bld0BcePjGxxZ6nAhfU3lCwS9M7YL8HPBfABLr4nrWVK
+F2x4AuP3cLSJVlyX0xzNci08kkzFo/KsBDHiEip0vIHgiWj2r+vK2g==
 -----END RSA PRIVATE KEY-----
 )KEY";
 
 // ==== VARIABLES ====
-float flowRate = 0.0;  // si luego se conectas el sensor, aquí se asigna la lectura real
+float flowRate = 0.0;
+
+// ==== SENSOR DE FLUJO YF-S201 ====
+volatile uint32_t pulseCount = 0;
+const int FLOW_SENSOR_PIN = 4;   // pin donde conectaste el cable amarillo del YF-S201
+const float K_FACTOR = 7.5;       // Pulsos por cada L/min (depende del YF-S201)
+
+void IRAM_ATTR pulseCounter() {
+  pulseCount++;
+}
 
 WiFiClientSecure secureClient;
 PubSubClient mqttClient(secureClient);
@@ -153,8 +162,15 @@ String getISO8601Timestamp() {
 
 // ==== PUBLICAR DATOS ====
 void publishData() {
-  // Simular un flujo entre 5 y 12 L/min
-  flowRate = random(500, 1200) / 100.0;
+  
+  // Calcular pulsos del sensor
+  noInterrupts();
+  uint32_t pulses = pulseCount;
+  pulseCount = 0;
+  interrupts();
+
+  // Calcular caudal real en L/min
+  flowRate = pulses / K_FACTOR;
 
   String timestamp = getISO8601Timestamp();
 
@@ -173,6 +189,10 @@ void publishData() {
 
 void setup() {
   Serial.begin(115200);
+  // === CONFIGURAR SENSOR ===
+  pinMode(FLOW_SENSOR_PIN, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(FLOW_SENSOR_PIN), pulseCounter, FALLING);
+
   connectWiFi();
   setupTime();
   connectAWS();
